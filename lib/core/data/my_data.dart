@@ -9,7 +9,7 @@ final UserModel myData = UserModel(
   name: 'Nada',
   email: 'nadanabilhelmyy@gmail.com',
   cvLink:
-      'https://drive.google.com/file/d/1DDBbH7xS4uhnC93y9448xsxeh5-arO4Y/view?usp=sharing',
+      'https://drive.google.com/file/d/1Fd7nE3pEWzGoYT_nEOAUWH8Q0qW0nvbq/view?usp=drive_link',
   logo: AppImages.nadaLogo,
   photo: AppImages.nada,
   profile:
