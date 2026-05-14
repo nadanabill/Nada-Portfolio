@@ -59,11 +59,21 @@ class ProjectCardWidget extends StatelessWidget {
                         .toList(),
                   ),
                   verticalSpace(15),
-                  if (project.link.isNotEmpty)
-                    IconButton(
-                      onPressed: () => launchUrlFunction(project.link),
-                      icon: const Icon(Icons.open_in_new_rounded),
-                    ),
+                  Row(
+                    children: [
+                      if (project.link.isNotEmpty)
+                        IconButton(
+                          onPressed: () => launchUrlFunction(project.link),
+                          icon: const Icon(Icons.open_in_new_rounded),
+                        ),
+                      if (project.iosLink != null &&
+                          project.iosLink!.isNotEmpty)
+                        IconButton(
+                          onPressed: () => launchUrlFunction(project.iosLink!),
+                          icon: const Icon(Icons.apple),
+                        ),
+                    ],
+                  ),
                 ],
               ),
             ),
