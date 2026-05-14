@@ -3,6 +3,7 @@ class ProjectModel {
   final String description;
   final String image;
   final String link;
+  final String? iosLink;
   final List<String> tags;
 
   ProjectModel({
@@ -11,5 +12,6 @@ class ProjectModel {
     required this.image,
     required this.link,
     required this.tags,
+    this.iosLink,
   });
 }
