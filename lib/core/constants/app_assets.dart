@@ -11,6 +11,8 @@ class AppImages {
   static const String taslema = '${AssetsPaths.images}/taslema.jpeg';
   static const String creativa = '${AssetsPaths.images}/creativa.jpeg';
   static const String mediaMart = '${AssetsPaths.images}/media_mart.png';
+  static const String athar = '${AssetsPaths.images}/athar.jpg';
+  static const String skysidra = '${AssetsPaths.images}/skysidra.jpeg';
 }
 
 class AppIcons {
