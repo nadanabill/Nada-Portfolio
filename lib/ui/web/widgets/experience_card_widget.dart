@@ -21,7 +21,7 @@ class ExperienceCardWidget extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 60, vertical: 30),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.asset(experience.image, height: 90, width: 90),
           horizontalSpace(50),
