@@ -16,11 +16,20 @@ class SkillIconWidget extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 25.0),
       child: Column(
         children: [
-          SvgPicture.asset(
-            skill.image,
-            height: 64,
-            width: 64,
-          ),
+          if (skill.image.endsWith('.svg'))
+            SvgPicture.asset(
+              skill.image,
+              height: 64,
+              width: 64,
+            ),
+          if (skill.image.endsWith('.png') ||
+              skill.image.endsWith('.jpg') ||
+              skill.image.endsWith('.jpeg'))
+            Image.asset(
+              skill.image,
+              height: 64,
+              width: 64,
+            ),
           verticalSpace(10),
           Text(
             skill.title,
