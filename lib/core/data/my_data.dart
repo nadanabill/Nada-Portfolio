@@ -12,10 +12,11 @@ final UserModel myData = UserModel(
       'https://drive.google.com/file/d/1DDBbH7xS4uhnC93y9448xsxeh5-arO4Y/view?usp=sharing',
   logo: AppImages.nadaLogo,
   photo: AppImages.nada,
-  profile: 'https://media.licdn.com/dms/image/v2/D4D03AQFE64YEZybfsw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730149556556?e=1751500800&v=beta&t=TTNHjqeSx6ETyvsfRQ4ZsTp3xRmINpx42-Wi-8g6NF8',
+  profile:
+      'https://media.licdn.com/dms/image/v2/D4D03AQFE64YEZybfsw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730149556565?e=1779926400&v=beta&t=0PE9EAG4PzSpvoxxHMNQx6ibwWg2SYwy1BuedWsRA8s',
   socialLinks: socialIcons,
   about:
-      'I’m a Flutter developer with three years of experience, Worked on real projects and trained more than 300 trainees on Flutter basics. I am looking for opportunities with an expert team of developers who will help advance my career progression in the future, and interested in learning new things that can benefit me and myself to improve in all aspects,',
+      'Flutter Developer specialized in building scalable, high-performance mobile applications using Flutter,Dart, Firebase, and Bloc. Experienced in designing clean architecture, implementing state management,and optimizing app performance across production environments. Skilled at mentoring and guiding junior developers through hands-on guidance and practical code reviews, fostering technical growth within the team.',
   profileSummary:
       'I am a passionate Flutter developer with three years of experience in building robust mobile applications. My journey began with a strong foundation in Computer Science, which I pursued at Minya University, where I graduated with a Bachelor’s degree in 2022. Since then, I have honed my skills through hands-on projects and training sessions, working with expert teams to deliver high-quality solutions.\n\nAs a developer, I thrive on solving complex problems and creating intuitive user experiences. Whether it\'s maintaining codebases, fixing bugs, or optimizing performance, I bring a meticulous approach to every task. My expertise lies in Flutter, Dart, Firebase, and state management patterns like Bloc and MVVM, which I leverage to build scalable and efficient applications.\n\nBeyond technical skills, I am an avid learner who stays updated with the latest trends in mobile development. I enjoy collaborating with diverse teams and mentoring others, having trained over 250 trainees on Flutter basics. Outside of work, I find joy in exploring new technologies, contributing to open-source projects, and sharing my knowledge through workshops and online courses.\n\nHere are some quick bits about me:\n• Education : Bachelor’s degree in Computer Science from Minya University (2018–2022)\n• Skills : Flutter, Dart, Firebase, Bloc, MVVM, Git/GitHub, RESTFUL APIs\n• Interests : Problem-solving, UI/UX design, mentorship, and continuous learning\n\nIf you\'re looking for a dedicated Flutter developer who is eager to learn and grow, feel free to reach out! I’m always open to freelance opportunities and excited to collaborate on exciting projects.',
   country: 'Egypt',
@@ -82,6 +83,10 @@ List<SkillsModel> skills = [
     image: 'assets/icons/figma.svg',
   ),
   SkillsModel(
+    title: 'App Store',
+    image: 'assets/icons/app_store.png',
+  ),
+  SkillsModel(
     title: 'Google Play Console',
     image: 'assets/icons/google_play_console.svg',
   ),
@@ -116,11 +121,34 @@ List<SocialIModel> socialIcons = [
 
 List<ProjectModel> projects = [
   ProjectModel(
+    title: 'بَوَارِقُ الْبَصِيرَة',
+    description:
+        'Designed and developed a cross-platform mobile application using Flutter that delivers Islamic interpretation content through a seamless and accessible reading experience. The application was built with a strong focus on performance, responsive design, Arabic typography optimization, and user experience across Android and iOS platforms.\nKey responsibilities included implementing scalable architecture, local data management, UI optimization, and ensuring smooth navigation and readability for Arabic content.',
+    image: 'assets/images/bawarek.png',
+    link:
+        'https://play.google.com/store/apps/details?id=com.skysidra.bawarek&hl=ar',
+    iosLink:
+        'https://apps.apple.com/eg/app/%D8%A8-%D9%88-%D8%A7%D8%B1-%D9%82-%D8%A7%D9%84-%D8%A8-%D8%B5-%D9%8A%D8%B1-%D8%A9/id6761624722بَوَارِقُ الْبَصِيرَة',
+    tags: [
+      'Flutter',
+      'Dart',
+      'Bloc',
+      'RestFul API',
+      'Dio',
+      'Hive',
+      'Responsive UI',
+      'Clean architecture',
+      'Git',
+    ],
+  ),
+
+  ProjectModel(
     title: 'Taslema',
     description:
         'A user friendly app designed to make your daily life easier by delivering anything you need, right to your doorstep. With just a few taps, you can order groceries, pharmacy items, meals from restaurants, and more all categorized for convenience. The app offers real-time tracking of your orders, ensuring you stay updated every step of the way. You can also browse menus from participating restaurants and leave honest reviews to help improve the service. Whether you\'re ordering food, picking up groceries, or sending something special, Taslema simplifies it all, making everyday tasks hassle free.',
     image: 'assets/images/taslema_app.png',
     link: 'https://play.google.com/store/apps/details?id=co.prestoapp.www',
+    iosLink: 'https://apps.apple.com/eg/app/taslema/id1458909898',
     tags: [
       'Flutter',
       'Dart',
@@ -172,6 +200,7 @@ List<ProjectModel> projects = [
     image: 'assets/images/taslema_vendor.png',
     link:
         'https://play.google.com/store/apps/details?id=com.taslema.vendor_app',
+    iosLink: 'https://apps.apple.com/eg/app/taslema-vendor/id1589962770',
     tags: [
       'Flutter',
       'Dart',
@@ -341,10 +370,34 @@ List<ExperienceModel> experiences = [
   ExperienceModel(
     title: 'Mobile Application Developer | Flutter',
     description:
+        '• Develop and maintain high-quality mobile applications.\n• Fix bugs and optimize application performance.\n• Mentor and guide trainees in mobile development concepts and best practices.\n• Support training sessions and contribute to technical content creation.\n• Build scalable, maintainable architectures for easier future improvements and modifications.\n• Manage app deployment and updates on app stores.',
+    image: AppImages.athar,
+    type: 'Part Time',
+    duration: 'Nov 2023 - Present',
+  ),
+  ExperienceModel(
+    title: 'Mobile Application Developer & Trainer',
+    description:
         '• Code Maintenance: Update and improve the code regularly.\n• Bug Fixing: Identify and fix bugs in the applications.\n• Code Optimization: Improve the performance of the existing code.\n• Project Deployment: Update the apps on Google Play.',
     image: AppImages.taslema,
     type: 'Part Time',
-    duration: 'Nov 2023 - Present',
+    duration: 'Jul 2025 - Present',
+  ),
+  ExperienceModel(
+    title: 'Mobile App Instructor | Mentor',
+    description:
+        '• Trained 300+ trainees in mobile app development and Flutter.\n• Conducted 26+ workshops on Flutter and app development.\n• Taught basics of mobile apps.\n• Introduced Flutter for cross-platform development.\n• Helped resolve technical issues.\n• Provided mentorship and learning strategies for continuous growth.',
+    image: AppImages.creativa,
+    type: 'Contract',
+    duration: 'Feb 2023 - Jun 2025',
+  ),
+  ExperienceModel(
+    title: 'Flutter Developer',
+    description:
+        '• Worked on building mobile app modules using Flutter\n• Translate UI/UX designs with responsive screens.\n• Improving application performance. Creating well-designed, and efficient code.',
+    image: AppImages.skysidra,
+    type: 'Freelance',
+    duration: 'Feb 2026 - Apr 2026',
   ),
   ExperienceModel(
     title: 'Flutter Developer',
@@ -353,13 +406,5 @@ List<ExperienceModel> experiences = [
     image: AppImages.mediaMart,
     type: 'Freelance',
     duration: 'Sep 2022 - Feb 2023',
-  ),
-  ExperienceModel(
-    title: 'Mobile App Instructor | Mentor',
-    description:
-        '• Trained 300+ trainees in mobile app development and Flutter.\n• Conducted 26+ workshops on Flutter and app development.\n• Taught basics of mobile apps.\n• Introduced Flutter for cross-platform development.\n• Helped resolve technical issues.\n• Provided mentorship and learning strategies for continuous growth.',
-    image: AppImages.creativa,
-    type: 'Contract',
-    duration: 'Feb 2023 - Present',
   ),
 ];
