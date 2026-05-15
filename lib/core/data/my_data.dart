@@ -121,28 +121,6 @@ List<SocialIModel> socialIcons = [
 
 List<ProjectModel> projects = [
   ProjectModel(
-    title: 'بَوَارِقُ الْبَصِيرَة',
-    description:
-        'Designed and developed a cross-platform mobile application using Flutter that delivers Islamic interpretation content through a seamless and accessible reading experience. The application was built with a strong focus on performance, responsive design, Arabic typography optimization, and user experience across Android and iOS platforms.\nKey responsibilities included implementing scalable architecture, local data management, UI optimization, and ensuring smooth navigation and readability for Arabic content.',
-    image: 'assets/images/bawarek.png',
-    link:
-        'https://play.google.com/store/apps/details?id=com.skysidra.bawarek&hl=ar',
-    iosLink:
-        'https://apps.apple.com/eg/app/%D8%A8-%D9%88-%D8%A7%D8%B1-%D9%82-%D8%A7%D9%84-%D8%A8-%D8%B5-%D9%8A%D8%B1-%D8%A9/id6761624722بَوَارِقُ الْبَصِيرَة',
-    tags: [
-      'Flutter',
-      'Dart',
-      'Bloc',
-      'RestFul API',
-      'Dio',
-      'Hive',
-      'Responsive UI',
-      'Clean architecture',
-      'Git',
-    ],
-  ),
-
-  ProjectModel(
     title: 'Taslema',
     description:
         'A user friendly app designed to make your daily life easier by delivering anything you need, right to your doorstep. With just a few taps, you can order groceries, pharmacy items, meals from restaurants, and more all categorized for convenience. The app offers real-time tracking of your orders, ensuring you stay updated every step of the way. You can also browse menus from participating restaurants and leave honest reviews to help improve the service. Whether you\'re ordering food, picking up groceries, or sending something special, Taslema simplifies it all, making everyday tasks hassle free.',
